@@ -7,7 +7,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Truncate Clean Projects",
+						"activity": "Truncate Clean Locations",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -151,7 +151,14 @@
 			{
 				"name": "Truncate Clean Locations",
 				"type": "Lookup",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Truncate Clean Projects",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -176,14 +183,7 @@
 			{
 				"name": "Truncate Clean Projects",
 				"type": "Lookup",
-				"dependsOn": [
-					{
-						"activity": "Truncate Clean Locations",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
