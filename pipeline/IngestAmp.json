@@ -104,11 +104,6 @@
 				]
 			}
 		],
-		"parameters": {
-			"TimeStamp": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }
