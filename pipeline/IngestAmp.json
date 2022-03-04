@@ -1,9 +1,9 @@
 {
-	"name": "CopyRawLocations",
+	"name": "IngestAmp",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_5qy",
+				"name": "Copy_Locations",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
