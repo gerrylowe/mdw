@@ -1,0 +1,9 @@
+{
+	"name": "storm-moderndw-df",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7a361f27-c32f-488e-ab44-48ce77e53718",
+		"tenantId": "95c1edb6-0906-490e-9dfe-6a87d230a3ba"
+	}
+}
