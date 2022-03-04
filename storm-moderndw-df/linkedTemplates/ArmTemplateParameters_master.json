@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "storm-moderndw-df"
+		},
+		"Amp_connectionString": {
+			"value": ""
+		},
+		"MDWDataLake_accountKey": {
+			"value": ""
+		},
+		"MDWDataLake_properties_typeProperties_url": {
+			"value": "https://mdwsa.dfs.core.windows.net"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
