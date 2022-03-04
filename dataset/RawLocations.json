@@ -1,5 +1,5 @@
 {
-	"name": "TargetLocations",
+	"name": "RawLocations",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "MDWDataLake",
@@ -10,10 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@concat('locations_', formatDateTime(utcnow(), 'yyyy-MM-ddTHHmmss'), '.parquet')",
-					"type": "Expression"
-				},
+				"fileName": "locations.parquet",
 				"folderPath": "amp",
 				"fileSystem": "raw"
 			},

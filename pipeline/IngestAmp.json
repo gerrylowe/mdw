@@ -48,7 +48,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "TargetLocations",
+						"referenceName": "RawLocations",
 						"type": "DatasetReference"
 					}
 				]
@@ -98,7 +98,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "TargetProjects",
+						"referenceName": "RawProjects",
 						"type": "DatasetReference"
 					}
 				]
