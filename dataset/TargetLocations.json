@@ -10,7 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "locations.parquet",
+				"fileName": {
+					"value": "@concat('locations_', formatDateTime(utcnow(), 'yyyy-MM-ddTHHmmss'))",
+					"type": "Expression"
+				},
 				"folderPath": "amp",
 				"fileSystem": "raw"
 			},
