@@ -129,7 +129,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "UPDATE Projects\nSET Description='Dummy'\nWHERE Description IS NULL\nOUTPUT 1",
+						"sqlReaderQuery": "UPDATE Projects\nSET Description='Dummy'\nOUTPUT INSERTED.Description\nWHERE Description IS NULL",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
