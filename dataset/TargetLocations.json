@@ -1,0 +1,21 @@
+{
+	"name": "TargetLocations",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MDWDataLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "locations",
+				"folderPath": "amp",
+				"fileSystem": "raw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
