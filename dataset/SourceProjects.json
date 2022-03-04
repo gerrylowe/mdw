@@ -1,0 +1,35 @@
+{
+	"name": "SourceProjects",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Amp",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Number",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LocationId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Description",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Projects"
+		}
+	}
+}
