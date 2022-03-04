@@ -1,0 +1,26 @@
+{
+	"name": "SourceLocations",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Amp",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Locations"
+		}
+	}
+}
